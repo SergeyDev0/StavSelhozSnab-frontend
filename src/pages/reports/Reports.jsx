@@ -21,7 +21,7 @@ const Reports = () => {
 	}, []);
 	
 	const fetchDataSales = async () => {
-		axios.get("http://localhost:5188/api/report/sales")
+		axios.get("https://24stavselhozsnab.ru/api/report/sales")
 		.then((res) => {
 			setDataSales(res.data);
 			console.log(res.data);
@@ -32,7 +32,7 @@ const Reports = () => {
 	};
 
 	const fetchDataOrders = async () => {
-		axios.get("http://localhost:5188/api/report/status")
+		axios.get("https://24stavselhozsnab.ru/api/report/status")
 		.then((res) => {
 			setDataOrders(res.data);
 			console.log(res.data);
@@ -43,7 +43,7 @@ const Reports = () => {
 	};
 
 	const fetchDataFinances = async () => {
-		axios.get("http://localhost:5188/api/report/finance")
+		axios.get("https://24stavselhozsnab.ru/api/report/finance")
 		.then((res) => {
 			setDataFinances(res.data);
 			console.log(res.data);
@@ -54,7 +54,7 @@ const Reports = () => {
 	};
 
 	const fetchDataProducts = async () => {
-		axios.get("http://localhost:5188/api/report/product/storage")
+		axios.get("https://24stavselhozsnab.ru/api/report/product/storage")
 		.then((res) => {
 			setDataProducts(res.data);
 			console.log(res.data);

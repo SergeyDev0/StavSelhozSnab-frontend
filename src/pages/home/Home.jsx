@@ -22,7 +22,7 @@ const Home = () => {
   
   const fetchData = async () => {
     try {
-      const res = await axios.get("http://localhost:5188/api/client");
+      const res = await axios.get("https://24stavselhozsnab.ru/api/client");
       setData(res.data);
     } catch (err) {
       console.error("Ошибка при загрузке данных:", err);
@@ -87,7 +87,7 @@ const Home = () => {
     setIsSubmitting(true);
     
     try {
-      await axios.post("http://localhost:5188/api/client", newClient);
+      await axios.post("https://24stavselhozsnab.ru/api/client", newClient);
       setSuccessMessage("Клиент успешно добавлен!");
       setNewClient({
         companyName: "",

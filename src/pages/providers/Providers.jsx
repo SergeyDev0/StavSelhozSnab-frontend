@@ -32,7 +32,7 @@ const Providers = () => {
 	
 	const fetchData = async () => {
 		try {
-			const res = await axios.get("http://localhost:5188/api/providers");
+			const res = await axios.get("https://24stavselhozsnab.ru/api/providers");
 			setData(res.data);
 		} catch (err) {
 			console.error("Ошибка при загрузке данных:", err);
@@ -41,7 +41,7 @@ const Providers = () => {
 
 	const fetchProducts = async () => {
 		try {
-			const res = await axios.get("http://localhost:5188/api/product");
+			const res = await axios.get("https://24stavselhozsnab.ru/api/product");
 			setProducts(res.data);
 		} catch (err) {
 			console.error("Ошибка при загрузке продуктов:", err);
@@ -112,7 +112,7 @@ const Providers = () => {
 		setIsSubmitting(true);
 		
 		try {
-			await axios.post("http://localhost:5188/api/providers", newProvider);
+			await axios.post("https://24stavselhozsnab.ru/api/providers", newProvider);
 			setSuccessMessage("Поставщик успешно добавлен!");
 			setNewProvider({
 				companyName: "",

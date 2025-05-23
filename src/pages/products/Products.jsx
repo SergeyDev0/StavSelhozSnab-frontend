@@ -22,7 +22,7 @@ const Products = () => {
 	
 	const fetchData = async () => {
 		try {
-			const res = await axios.get("http://localhost:5188/api/product");
+			const res = await axios.get("https://24stavselhozsnab.ru/api/product");
 			setData(res.data);
 		} catch (err) {
 			console.error("Ошибка при загрузке данных:", err);
@@ -84,7 +84,7 @@ const Products = () => {
 		setIsSubmitting(true);
 		
 		try {
-			await axios.post("http://localhost:5188/api/product", newProduct);
+			await axios.post("https://24stavselhozsnab.ru/api/product", newProduct);
 			setSuccessMessage("Продукт успешно добавлен!");
 			setNewProduct({
 				name: "",

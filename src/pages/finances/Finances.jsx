@@ -20,7 +20,7 @@ const Finances = () => {
 	
 	const fetchData = async () => {
 		try {
-			const res = await axios.get("http://localhost:5188/api/finance");
+			const res = await axios.get("https://24stavselhozsnab.ru/api/finance");
 			setData(res.data);
 		} catch (err) {
 			console.error("Ошибка при загрузке данных:", err);
@@ -77,7 +77,7 @@ const Finances = () => {
 				createdAt: new Date().toISOString()
 			};
 
-			await axios.post("http://localhost:5188/api/finance", financeData);
+			await axios.post("https://24stavselhozsnab.ru/api/finance", financeData);
 			setSuccessMessage("Финансовая запись успешно добавлена!");
 			setNewFinance({
 				type: "income",

@@ -24,7 +24,7 @@ const SignUp = () => {
 			alert("Пожалуйста, заполните все поля");
 			return;
 		} else {
-			axios.post("http://localhost:5188/user/create", 
+			axios.post("https://24stavselhozsnab.ru/user/create", 
 				{
 					"name": name,
 					"surname": surname,
@@ -44,7 +44,7 @@ const SignUp = () => {
 	}
 
 	React.useEffect(() => {
-		axios.get("http://localhost:5188/api/role")
+		axios.get("https://24stavselhozsnab.ru/api/role")
 			.then((res) => {
 				setRoleData(res.data);
 				setRole(res.data[0].id);
@@ -54,7 +54,7 @@ const SignUp = () => {
 				console.log(err);
 			})
 
-		axios.get("http://localhost:5188/api/deportaments")
+		axios.get("https://24stavselhozsnab.ru/api/deportaments")
 			.then((res) => {
 				setDepartamentData(res.data);
 				setDepartament(res.data[0].id);

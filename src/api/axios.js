@@ -3,7 +3,7 @@ import { globalStore } from '../store/globalStore';
 
 // Создаем экземпляр axios с базовым URL
 const instance = axios.create({
-    baseURL: 'http://localhost:5188/api'
+    baseURL: 'https://24stavselhozsnab.ru/api'
 });
 
 // Добавляем перехватчик запросов
