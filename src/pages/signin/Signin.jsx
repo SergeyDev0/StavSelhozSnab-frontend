@@ -16,7 +16,7 @@ const SignIn = () => {
 			alert("Пожалуйста, заполните все поля");
 			return;
 		} else {
-			axios.post("https://24stavselhozsnab.ru/user/login", 
+			axios.post("https://24stavselhozsnab.ru/api/user/login", 
 				{
 					"email": email,
 					"password": password,

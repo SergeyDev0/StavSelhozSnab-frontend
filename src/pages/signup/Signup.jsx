@@ -24,7 +24,7 @@ const SignUp = () => {
 			alert("Пожалуйста, заполните все поля");
 			return;
 		} else {
-			axios.post("https://24stavselhozsnab.ru/user/create", 
+			axios.post("https://24stavselhozsnab.ru/api/user/create", 
 				{
 					"name": name,
 					"surname": surname,
